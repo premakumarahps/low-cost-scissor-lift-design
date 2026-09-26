@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="scissorArm" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="safetyYellow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Base with Border -->
+  <rect width="200" height="200" rx="42" fill="url(#bgGrad)" stroke="#e2e8f0" stroke-width="3"/>
+
+  <!-- Industrial Chassis Base Platform -->
+  <rect x="36" y="152" width="128" height="14" rx="4" fill="url(#metalGrad)"/>
+  
+  <!-- Wheels -->
+  <circle cx="52" cy="168" r="9" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+  <circle cx="148" cy="168" r="9" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+  <circle cx="52" cy="168" r="3" fill="#cbd5e1"/>
+  <circle cx="148" cy="168" r="3" fill="#cbd5e1"/>
+
+  <!-- Deployable Outriggers -->
+  <path d="M 36 156 L 18 168 L 22 172 L 40 162 Z" fill="#0284c7"/>
+  <path d="M 164 156 L 182 168 L 178 172 L 160 162 Z" fill="#0284c7"/>
+
+  <!-- Lower Scissor Tier -->
+  <line x1="50" y1="152" x2="150" y2="108" stroke="url(#scissorArm)" stroke-width="7" stroke-linecap="round"/>
+  <line x1="150" y1="152" x2="50" y2="108" stroke="url(#scissorArm)" stroke-width="7" stroke-linecap="round"/>
+  
+  <!-- Central Pivot Pin 1 -->
+  <circle cx="100" cy="130" r="5" fill="#f8fafc" stroke="#1e293b" stroke-width="2.5"/>
+
+  <!-- Upper Scissor Tier -->
+  <line x1="50" y1="108" x2="150" y2="64" stroke="url(#scissorArm)" stroke-width="7" stroke-linecap="round"/>
+  <line x1="150" y1="108" x2="50" y2="64" stroke="url(#scissorArm)" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Central Pivot Pin 2 -->
+  <circle cx="100" cy="86" r="5" fill="#f8fafc" stroke="#1e293b" stroke-width="2.5"/>
+  <circle cx="50" cy="108" r="4" fill="#334155"/>
+  <circle cx="150" cy="108" r="4" fill="#334155"/>
+
+  <!-- Hydraulic Booster Cylinders (Center Boosters) -->
+  <rect x="94" y="98" width="12" height="28" rx="2" fill="#0284c7" stroke="#0369a1"/>
+  <rect x="98" y="90" width="4" height="8" fill="#94a3b8"/>
+
+  <!-- Top Elevated Work Platform -->
+  <rect x="36" y="56" width="128" height="8" rx="2" fill="url(#metalGrad)"/>
+
+  <!-- Safety Bench with Guardrails -->
+  <rect x="42" y="32" width="116" height="24" rx="3" fill="none" stroke="url(#safetyYellow)" stroke-width="3"/>
+  <line x1="42" y1="44" x2="158" y2="44" stroke="url(#safetyYellow)" stroke-width="2"/>
+  <line x1="80" y1="32" x2="80" y2="56" stroke="url(#safetyYellow)" stroke-width="2"/>
+  <line x1="120" y1="32" x2="120" y2="56" stroke="url(#safetyYellow)" stroke-width="2"/>
+
+  <!-- Horizontal Hand Crank Mechanism Icon -->
+  <circle cx="160" cy="50" r="4" fill="#eab308" stroke="#713f12"/>
+  <line x1="160" y1="50" x2="168" y2="44" stroke="#713f12" stroke-width="2" stroke-linecap="round"/>
+</svg>
