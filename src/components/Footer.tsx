@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, FileText, Box, Shield, Award, Cpu, ChevronUp } from 'lucide-react';
+import { Download, FileText, Box, Shield, Award, Cpu, ChevronUp, ExternalLink } from 'lucide-react';
 
 interface FooterProps {
   onNavigateTab: (tabId: string) => void;
@@ -158,6 +158,28 @@ export const Footer: React.FC<FooterProps> = ({ onNavigateTab }) => {
           <p>
             © {new Date().getFullYear()} ME2851 Low-Cost Scissor Lift Mechanism. All engineering designs and stress validations authored by Premakumara H.P.S. (210494D).
           </p>
+
+          <div className="flex items-center gap-4 text-xs">
+            <a
+              href="https://github.com/premakumarahps/low-cost-scissor-lift-design"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-white transition-colors flex items-center gap-1"
+            >
+              <span>GitHub Repository</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+            <a
+              href="https://premakumarahps.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-white transition-colors flex items-center gap-1"
+            >
+              <span>Main Portfolio</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          </div>
+
 
           <button
             onClick={scrollToTop}
